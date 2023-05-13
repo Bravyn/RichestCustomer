@@ -6,10 +6,8 @@ customers = [[2, 145,60], [8, 118, 170], [12, 33, 97]]
 
 def get_richest_customer(customers):
   account_totals = []
+  
   for account in customers:
     account_totals.append(sum(account))
-  print(account_totals)
-  return account_totals.index(max(account_totals))
-
-
+  return max(account_totals)
 
